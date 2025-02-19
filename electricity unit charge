@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int units;
+    float bill = 0.0, surcharge;
+    
+    // Input number of units consumed
+    scanf("%d", &units);
+    
+    // Calculate bill based on given conditions
+    if (units <= 50) {
+        bill = units * 0.50;
+    } else if (units <= 150) {
+        bill = (50 * 0.50) + ((units - 50) * 0.75);
+    } else if (units <= 250) {
+        bill = (50 * 0.50) + (100 * 0.75) + ((units - 150) * 1.20);
+    } else {
+        bill = (50 * 0.50) + (100 * 0.75) + (100 * 1.20) + ((units - 250) * 1.50);
+    }
+    
+    // Add surcharge of 20%
+    surcharge = bill * 0.20;
+    bill += surcharge;
+    
+    // Print final bill rounded to two decimal places
+    printf("%.2f\n", bill);
+    
+    return 0;
+}

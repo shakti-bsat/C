@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char a;
+    scanf("%c",&a);
+    int b = a;
+    if(b == 65||b == 97||b == 69||b == 73||b == 79||b == 85||b == 101||b == 111||b == 105||b == 117){
+        printf("Vowel");
+    }
+    else{
+        printf("Consonant");
+    }
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

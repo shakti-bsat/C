@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char a;
+    scanf("%c",&a);
+    int b = a;
+    if (b>=48 &&b<=57){
+        printf("NUMBER");
+    }
+    else if((b>=65 && b<=90)||(b>=97 && b<=122))
+    {
+        printf("ALPHABET");
+    }
+    else{
+        printf("SPECIAL CHARACTER");
+    }
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

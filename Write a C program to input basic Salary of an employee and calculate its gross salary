@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int bs;
+    float hra,da;
+    scanf("%d",&bs);
+    if (bs<=10000){
+        hra = bs*0.2;
+        da = bs*0.8;
+        printf("Rs.%.2f",hra+da+bs);
+    }
+    else if(bs<=20000 && bs>10000){
+        hra = bs*0.25;
+        da = bs*0.9;
+        printf("Rs.%.2f",hra+da+bs);
+    }
+    else{
+        hra = bs*0.3;
+        da = bs*0.95;
+        printf("Rs.%.2f",hra+da+bs);
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
